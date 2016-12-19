@@ -1,26 +1,140 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Milo Hartsoe</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Milo Hartsoe!</h1>
-				<p>I am a high school student with a passion for computer science. I love to code. As you can tell by this website, I enjoy using HTML5, CSS3, Javascript, Jquery, Bootstrap, and other tools to develop websites and apps. Also, I enjoy competitive programming, hackathons, and CTFs. This is my webpage.</p>
-    		</div>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Milo Hartsoe</title>
+
+
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+	<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+
+	<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+	<!--Navbar-->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+		<span class="sr-only">Toggle navigation</span> 
+		<span class="icon-bar"></span> 
+		<span class="icon-bar"></span> 
+		<span class="icon-bar"></span> 
+	  </button>
+				<a class="navbar-brand smooth" href="#about">Milo Hartsoe</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="#home" class="smooth">Home</a></li>
+					<li><a href="#about" class="smooth">About</a></li>
+					<li><a href="#portfolio" class="smooth">Portfolio</a></li>
+					<li><a href="#contact" class="smooth">Contact</a></li>
+				</ul>
+			</div>
 		</div>
-		<footer>
-    		<ul>
-        		<li><a href="https://github.com/MiloATH">github.com/MiloATH</a></li>
-			</ul>
-		</footer>
-	</body>
+	</nav>
+	<!--Navbar end-->
+
+	<!--Home-->
+	<div id="home" class="content-section banner home">
+		<div class="container ">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>Studious Student</h1>
+					<h5>Make things awesome</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Home end-->
+
+	<!--About-->
+	<div id="about" class="content-section">
+		<div class="container writing">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>About</h2>
+					<div class="blurb">
+						<h1>Hi there, I'm Milo Hartsoe!</h1>
+						<p>I am a high school student with a passion for computer science. I love to code. As you can tell by this website, I enjoy using HTML5, CSS3, Javascript, Jquery, Bootstrap, and other tools to develop websites and apps. Also, I enjoy competitive programming,
+							hackathons, and CTFs. This is my webpage.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--About end-->
+
+	<!--Portfolio-->
+	<div id="portfolio" class="content-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>Portfolio</h2>
+					<p>Here is the stuff I have done. </p>
+					<!--Codepen example-->
+					<!--Codepen example end-->
+					<div class="col-md-6">
+						<div class="thumbnail">
+							<p data-height="335" data-theme-id="0" data-slug-hash="VjxmyJ" data-default-tab="result" data-user="Miloath" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/Miloath/pen/VjxmyJ/">Wikipedia Viewer</a> by Milo Hartsoe (<a href="http://codepen.io/Miloath">@Miloath</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+							<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+							<h4>Wikipedia Search</h4>
+							<p>This project uses the wikipedia API to search wikipedia for your query.</p>
+						</div>
+						<div class="thumbnail">
+							<p data-height="530" data-theme-id="0" data-slug-hash="bZooKk" data-default-tab="result" data-user="Miloath" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/Miloath/pen/bZooKk/">Random Quote Generator</a> by Milo Hartsoe (<a href="http://codepen.io/Miloath">@Miloath</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+							<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+							<h4>Random Quote Generator</h4>
+							<p>This project uses an API to generate cool quotes.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="thumbnail">
+							<p data-height="600" data-theme-id="0" data-slug-hash="AXmWGV" data-default-tab="result" data-user="Miloath" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/Miloath/pen/AXmWGV/">Calculator</a> by Milo Hartsoe (<a href="http://codepen.io/Miloath">@Miloath</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+							<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+							<h4>Calculator</h4>
+							<p>This project is a javascript Calculator.</p>
+						</div>
+						<div class="thumbnail">
+							<p data-height="266" data-theme-id="0" data-slug-hash="PzVGNA" data-default-tab="result" data-user="Miloath" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/Miloath/pen/PzVGNA/">Tic Tac Toe</a> by Milo Hartsoe (<a href="http://codepen.io/Miloath">@Miloath</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+							<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+							<h4>Tic Tac Toe</h4>
+							<p>This project is the classic game of tic tac toe against an artificial intelligence</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Portfolio end-->
+
+	<!--Contact. Maybe I will add this later (9/1/2016).-->
+	<div id="contact" class="content-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>Contact</h2>
+					<button class="github" onclick="window.open('https://github.com/MiloATH')">
+					<i class="fa fa-github fa-2x" aria-hidden="true"></i>
+					<span class="name">Github</span>
+				</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Contact end-->
+	<div class="footer">
+		Designed and Coded by Milo Hartsoe
+	</div>
+	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
+	<script src="js/index.js"></script>
+
+</body>
+
 </html>
