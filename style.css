@@ -9,7 +9,7 @@
 }
 
 .home {
-  background: url(http://i.imgur.com/caMZAr0.jpg) no-repeat fixed;
+  background: url(BckgrndCmp.jpg) no-repeat fixed;
   background-size: cover;
 }
 
@@ -19,6 +19,7 @@
   min-height: 300px;
   color: white;
 }
+
 .content-section.banner h1 {
   display: inline-block;
   -webkit-text-stroke: 2px black;
@@ -37,11 +38,13 @@
   padding: 1rem;
   min-width: 200px;
 }
+
 .work-box i {
   border-bottom: 3px rgba(0, 0, 0, 0.2) solid;
   padding: .75rem;
   padding-bottom: 3rem;
 }
+
 .work-box p {
   padding: .75rem;
 }
@@ -65,9 +68,11 @@
   background: white;
   border-radius: 5px;
 }
+
 .github .name {
   font-size: 2rem;
 }
+
 .github i {
   padding: 1px;
 }

@@ -1,8 +1,12 @@
-$(document).ready(function(){ 
-	$(".smooth").click(function(event){
-		event.preventDefault();
-		$("html,body").animate({scrollTop:$(this.hash).offset().top}, 600);
-		$('.navbar-default a').removeClass('at');
-		$(this).addClass('at');
-    	});
+$('a[href*="#"]:not([href="#"])').click(function() {
+	if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+		var target = $(this.hash);
+		target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		if (target.length) {
+			$('html, body').animate({
+				scrollTop: target.offset().top
+			}, 1000);
+			return false;
+		}
+	}
 });
