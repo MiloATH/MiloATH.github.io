@@ -1,0 +1,57 @@
+body {
+    background: #00b377;
+    padding-top: 1.5rem;
+    padding-bottom: 15rem;
+}
+
+.quote {
+    background: white;
+    width: 50%;
+    margin: 10% auto auto auto;
+    padding: 1.5rem;
+    padding-bottom: .5rem;
+    border-radius: 2rem;
+    color: #00b377;
+    text-align: center;
+}
+
+button {
+    color: white;
+    background-color: #00b377;
+    padding: 3px 6px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+.loading {
+    display: inline-block;
+    margin: auto;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border-top: solid green 3px;
+    visibility: show;
+}
+
+@keyframes rot {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#author {
+    text-align: right;
+    padding-right: 1.5rem;
+}
+
+.twitter-share-button {
+    color: white;
+    background: #00b377;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+#contribution {
+    padding-top: .5rem;
+}

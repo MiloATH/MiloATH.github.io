@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Candal);
+body {
+	background: #212121;
+	font-family: 'Candal';
+}
+
+footer {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 15px;
+	color: white;
+}
+
+h1 {
+	color: white;
+}
+
+.top {
+	width: 100%;
+	margin: 5% auto auto auto;
+	padding: 1.5rem;
+	border-radius: 2rem;
+	text-align: center;
+}
+
+.fading {
+	border-color: black;
+	border-style: solid;
+	text-decoration: none !important;
+	color: black;
+	-moz-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	-webkit-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+	background: #f5f5f5;
+}
+
+.fading:hover {
+	text-decoration: none;
+	background: black;
+	border-color: white;
+	color: white;
+}
+
+.tile {
+	border-radius: 1rem;
+	padding: 1rem;
+	margin: 1% auto auto auto;
+}
+
+.tile:hover {
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}

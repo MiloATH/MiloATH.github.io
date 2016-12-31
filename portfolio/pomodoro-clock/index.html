@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Pomodoro Clock</title>
+	<link href='https://fonts.googleapis.com/css?family=Rock+Salt|Oswald' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="title">
+			<h1>Pomodoro Clock</h1>
+			<p class="info">Click the timer to start and stop. Use the + or - to adjust the
+				<font class="green">break</font> and
+				<font class="red">work</font> times. Adjusting the times will reset the clock.</P>
+		</div>
+		<div class="clock" id="clock">
+			<div class="time">
+				<span class="minutes">25</span>:<span class="seconds">00</span>
+			</div>
+		</div>
+		<div class="input">
+			<div class="buttons">
+				<span class="label green">Break</span><br>
+				<button class="minusBreak">&minus;</button>
+				<span class="break">5</span>
+				<button class="plusBreak">&plus;</button>
+			</div>
+			<div class="buttons">
+				<span class="label red">Work</span><br>
+				<button class="minusWork">&minus;</button>
+				<span class="work">25</span>
+				<button class="plusWork">&plus;</button><br>
+			</div>
+		</div>
+	</div>
+	<footer>Designed and coded by Milo Hartsoe</footer>
+	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+.container {
+	margin: 2rem auto auto auto;
+}
+
+body {
+	background-color: #F5F584;
+	font-family: 'Baloo Chettan', cursive;
+}
+
+.start-screen {
+	text-align: center;
+}
+
+.select {
+	width: 20%;
+	height: 40px;
+	background-color: #E8D035;
+	border: none;
+	border-radius: 5%;
+	outline: none;
+}
+
+.hide {
+	display: none;
+}
+
+.board {
+	width: 60vmin;
+	min-width: 3em;
+	margin: auto;
+	text-align: center;
+}
+
+.box {
+	height: 20vmin;
+	min-height: 3em;
+	float: left;
+	position: relative;
+	width: 30%;
+	margin: 1.66%;
+	background-color: white;
+	align-items: center;
+	font-size: 6vh;
+	font-weight: bold;
+	border: none;
+	border-radius: .5em;
+	outline: 0;
+}
+
+.X {
+	background-color: #DA6357;
+}
+
+.O {
+	background-color: #EDAE4A;
+}
+
+.notify {
+	background: #FFA3A3;
+	border: 3px solid #FFA3A3;
+	border-radius: 5px;
+	padding-right: 1%;
+	padding-left: 1%;
+	font-size: 0.9rem;
+}

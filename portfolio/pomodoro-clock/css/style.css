@@ -1,0 +1,106 @@
+body {
+	background: #1F1F1F;
+	color: white;
+	font-family: 'Rock Salt', cursive;
+}
+
+h1 {
+	background: #2E2E2E;
+	display: inline-block;
+	padding: 20px;
+	margin: auto;
+	border-radius: 1rem;
+}
+
+.buttons {
+	font-size: 32px;
+	padding: 0 10px;
+	float: left;
+}
+
+.label {
+	font-size: 20px;
+}
+
+.info {
+	font-size: 18px;
+	font-family: 'Oswald', sans-serif;
+}
+
+button {
+	background: #3D3D3D;
+	border: none;
+	outline: 0;
+	width: 40px;
+	height: 40px;
+	font-size: 32px;
+	border-radius: 5px;
+}
+
+.input {
+	color: white;
+	display: inline-block;
+	text-align: center;
+}
+
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
+
+.container {
+	margin: 5% auto auto auto;
+	justify-content: center;
+	text-align: center;
+	width: 50%;
+}
+
+.time {
+	justify-content: center;
+	padding: 25% 0 0 0;
+}
+
+.clock {
+	background-color: #2E2E2E;
+	//border : solid 10px;
+	border-radius: 50%;
+	font-size: 72px;
+	height: 400px;
+	width: 400px;
+	margin: auto;
+	test-align: center;
+}
+
+@keyframes shadowing {
+	50% {
+		opacity: .5;
+		box-shadow: 0 0 10px 10px;
+		/* #66FF66;*/
+		transform: scale(0.9);
+	}
+}
+
+.clockAnim {
+	animation: shadowing 1s ease-in-out infinite;
+	width: vmax;
+	height: vmax;
+}
+
+.clockWork {
+	color: red;
+}
+
+.clockBreak {
+	color: green;
+}
+
+.time {
+	color: white;
+}
+
+footer {
+	text-align: center;
+}
