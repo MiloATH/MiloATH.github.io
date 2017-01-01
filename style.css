@@ -85,3 +85,19 @@
 .at {
   border-bottom: black solid 3px;
 }
+
+.project {
+  width: 100%;
+  min-height: 300px;
+}
+
+.thumbnail:hover,
+.thumbnail:visited,
+.thumbnail:link,
+.thumbnail:active {
+  color: #000;
+  text-decoration: none;
+}
+.thumbnail iframe{
+  pointer-events: none;
+}

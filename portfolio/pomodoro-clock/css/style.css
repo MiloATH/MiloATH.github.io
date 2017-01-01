@@ -15,7 +15,7 @@ h1 {
 .buttons {
 	font-size: 32px;
 	padding: 0 10px;
-	float: left;
+	display: inline-block;
 }
 
 .label {
@@ -68,8 +68,11 @@ button {
 	//border : solid 10px;
 	border-radius: 50%;
 	font-size: 72px;
-	height: 400px;
-	width: 400px;
+	height:400px;
+	width:400px;
+	font-size: 8vw;
+	height: 48vw;
+	width: 48vw;
 	margin: auto;
 	test-align: center;
 }
