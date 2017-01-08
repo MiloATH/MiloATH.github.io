@@ -7,6 +7,9 @@ function iframe() {
 		$('#author').text(" -The Wizard of Oz");
 		$("#quote").addClass("fa-quote-left");
 	}).slideDown(400);
+	$(".loading").css({
+		"visibility": "hidden"
+	});
 	tweetLink = "https://twitter.com/intent/tweet?text=" + encodeURI("There's no place like home. -The Wizard of Oz");
 }
 
