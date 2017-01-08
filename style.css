@@ -10,12 +10,13 @@
 
 .home {
   background: url(BckgrndCmp.jpg) no-repeat fixed;
+  height: 500px; 
   background-size: cover;
 }
 
 .content-section.banner {
   text-align: center;
-  height: 60vw;
+  height: 40vw;
   min-height: 300px;
   color: white;
 }
@@ -57,7 +58,7 @@
   padding: 1%;
 }
 
-.github {
+.contact-block {
   color: black;
   justify-content: center;
   text-align: center;
