@@ -10,6 +10,8 @@ h1 {
 	padding: 20px;
 	margin: auto;
 	border-radius: 1rem;
+	font-size:10vw;
+	text-align:center;
 }
 
 .buttons {
@@ -53,7 +55,7 @@ button {
 
 .container {
 	margin: 5% auto auto auto;
-	justify-content: center;
+	//justify-content: center;
 	text-align: center;
 	width: 50%;
 }
@@ -65,7 +67,6 @@ button {
 
 .clock {
 	background-color: #2E2E2E;
-	//border : solid 10px;
 	border-radius: 50%;
 	font-size: 72px;
 	height:400px;
@@ -81,7 +82,6 @@ button {
 	50% {
 		opacity: .5;
 		box-shadow: 0 0 10px 10px;
-		/* #66FF66;*/
 		transform: scale(0.9);
 	}
 }

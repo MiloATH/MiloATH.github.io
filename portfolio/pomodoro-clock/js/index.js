@@ -45,10 +45,12 @@ $(".clock").on('click', function() {
 		started = true;
 		if (stoppedMidway) {
 			timer(timeLeft);
-		} else {
+		}
+		else {
 			timer(work ? workT : breakT);
 		}
-	} else { //stop timer
+	}
+	else { //stop timer
 		clearInterval(timeinterval);
 		started = false;
 		animationStop();
@@ -65,6 +67,7 @@ function initializeClock(c, endtime) {
 	var clock = document.getElementById(c);
 	var minutesSpan = clock.querySelector('.minutes');
 	var secondsSpan = clock.querySelector('.seconds');
+
 	function updateDig() {
 		var t = remainingTime(endtime);
 		minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
@@ -73,7 +76,8 @@ function initializeClock(c, endtime) {
 			clearInterval(timeinterval);
 			work = !work;
 			timer(work ? workT : breakT);
-		} else if (!started) {
+		}
+		else if (!started) {
 			clearInterval(timeinterval);
 			timeLeft = t.left;
 			stoppedMidway = true;
@@ -101,9 +105,10 @@ function remainingTime(end) {
 function animation() {
 	var classes = 'clockAnim';
 	if (work) {
-		classes+= ' clockWork';
-	} else {
-		classes+= ' clockBreak';
+		classes += ' clockWork';
+	}
+	else {
+		classes += ' clockBreak';
 	}
 	$('.clock').addClass(classes);
 	$('.input').slideUp();
