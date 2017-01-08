@@ -1,3 +1,12 @@
+.remove-a-blue,
+.remove-a-blue:hover,
+.remove-a-blue:visited,
+.remove-a-blue:link,
+.remove-a-blue:active {
+  color: #FFF;
+  text-decoration: none;
+}
+
 .writing {
   margin: auto;
   width: 50%;
@@ -10,7 +19,7 @@
 
 .home {
   background: url(BckgrndCmp.jpg) no-repeat fixed;
-  height: 500px; 
+  height: 500px;
   background-size: cover;
 }
 
@@ -70,15 +79,15 @@
   border-radius: 5px;
 }
 
-.github .name {
+.contact-block .name {
   font-size: 2rem;
 }
 
-.github i {
+.contact-block i {
   padding: 1px;
 }
 
-.github:hover {
+.contact-block:hover {
   background: black;
   color: white;
 }
@@ -99,7 +108,8 @@
   color: #000;
   text-decoration: none;
 }
-.thumbnail iframe{
+
+.thumbnail iframe {
   pointer-events: none;
-  border:none;
+  border: none;
 }
