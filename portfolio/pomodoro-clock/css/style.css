@@ -69,9 +69,9 @@ button {
 	font-size: 72px;
 	height:400px;
 	width:400px;
-	font-size: 8vw;
-	height: 48vw;
-	width: 48vw;
+	font-size: 4vw;
+	height: 24vw;
+	width: 24vw;
 	margin: auto;
 	test-align: center;
 }
