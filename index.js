@@ -22,3 +22,11 @@ $('a[href*="#"]:not([href="#"])').click(function() {
 		}
 	}
 });
+
+//iframe loader
+$('.voting-app').ready(function() {
+   $('.loader').css('display', 'none');
+});
+$('.voting-app').load(function() {
+   $('.loader').css('display', 'none');
+});
