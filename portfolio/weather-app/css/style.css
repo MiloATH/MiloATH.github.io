@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+body {
+	background: url(https://s32.postimg.org/4i7g70b11/UF8_O665_J49.jpg)
+		no-repeat
+		center
+		center
+		fixed; //image from stocksnap.io
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+i {
+	font-size: 100px;
+	text-align: center;
+	padding-top: 1.5rem;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+.info {
+	font-family: 'Fjalla One', sans-serif;
+	text-align: center;
+	color: black;
+	width: 50%;
+	margin: 10% auto auto auto;
+	font-size: 60px;
+	background: rgba(255, 255, 255, .6);
+	border-radius: 15px;
+	padding: 10px 10px 0px 10px;
+}
+
+button {
+	background-color: rgba(200, 200, 200, 0);
+	padding: 3px 6px;
+	border: none;
+	border-radius: 3px;
+	font-size: 30px;
+}
+
+button:focus {
+	outline: 0;
+}
+
+#cOrF {
+	font-size: 50px;
+}
+
+.footer {
+	padding: 5px;
+	font-size: 10px;
+}
+
+#button-div {
+	display: inline-block;
+}
+
+#temperature {
+	display: inline-block;
+}
