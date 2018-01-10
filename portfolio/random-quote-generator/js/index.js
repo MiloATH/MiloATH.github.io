@@ -43,8 +43,9 @@ function newQuote() {
                 Accept: "application/json",
                 "Content-Type": "application/x-www-form-urlencoded"
             },
-            url: 'https://andruxnet-random-famous-quotes.p.mashape.com/cat=',
-            success: function(res) {
+            url: 'https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous&count=1',
+            success: function(response) {
+                var res = JSON.parse(response);
                 $(".text").slideUp(400, function() {
                     $('#quote').text(" " + res.quote);
                     $('#author').text("-" + res.author);
