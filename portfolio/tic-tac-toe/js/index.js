@@ -97,11 +97,11 @@ function AIMove() {
 	if (nextMove.length >= 1) {
 		return nextMove[0];
 	}
-	nextMove = fork(board, bot); //check two moves ahead for fork
+	nextMove = fork(board, p1); //check two moves ahead for enemy fork
 	if (nextMove.length >= 2) {
 		return nextMove[0];
 	}
-	nextMove = fork(board, p1); //check two moves ahead for enemy fork
+	nextMove = fork(board, bot); //check two moves ahead for fork
 	if (nextMove.length >= 2) {
 		return nextMove[0];
 	}
@@ -124,16 +124,16 @@ function AIMove() {
 	if (retOps.length >= 1) {
 		return retOps[Math.floor(Math.random() * retOps.length)];
 	}
-	for (var c in CORNERS) {
-		if (board[c[0]][c[1]] === "") {
+	for (var i = 0; i < CORNERS.length; ++i) {
+		if (board[CORNERS[i][0]][CORNERS[i][[1]] === "") {
 			retOps.push(c);
 		}
 	}
 	if (retOps.length >= 1) {
 		return retOps[Math.floor(Math.random() * retOps.length)];;
 	}
-	for (c in SIDES) {
-		if (board[c[0]][c[1]] === "") {
+	for (var i = 0; i < SIDES.length; ++i) {
+		if (board[SIDES[i][0]][SIDES[i][1]] === "") {
 			retOps.push(c);
 		}
 	}
