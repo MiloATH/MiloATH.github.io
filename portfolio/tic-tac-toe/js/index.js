@@ -126,7 +126,7 @@ function AIMove() {
 	}
 	for (var i = 0; i < CORNERS.length; ++i) {
 		if (board[CORNERS[i][0]][CORNERS[i][1]] === "") {
-			retOps.push(board[CORNERS[i][0]][CORNERS[i][1]]);
+			retOps.push(CORNERS[i]);
 		}
 	}
 	if (retOps.length >= 1) {
@@ -134,7 +134,7 @@ function AIMove() {
 	}
 	for (var i = 0; i < SIDES.length; ++i) {
 		if (board[SIDES[i][0]][SIDES[i][1]] === "") {
-			retOps.push(board[SIDES[i][0]][SIDES[i][1]]);
+			retOps.push(SIDES[i]);
 		}
 	}
 	if (retOps.length >= 1) {
