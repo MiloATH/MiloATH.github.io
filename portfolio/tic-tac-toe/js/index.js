@@ -125,7 +125,7 @@ function AIMove() {
 		return retOps[Math.floor(Math.random() * retOps.length)];
 	}
 	for (var i = 0; i < CORNERS.length; ++i) {
-		if (board[CORNERS[i][0]][CORNERS[i][[1]] === "") {
+		if (board[CORNERS[i][0]][CORNERS[i][1]] === "") {
 			retOps.push(c);
 		}
 	}
