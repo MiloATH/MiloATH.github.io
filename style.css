@@ -136,3 +136,7 @@
 .frame{
   position:relative;
 }
+
+.thumbnail > h4, p {
+    margin-left: 10px;
+}
