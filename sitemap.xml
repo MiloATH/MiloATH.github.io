@@ -1,28 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-<url>
-  <loc>http://milohartsoe.me/</loc>
-  <lastmod>2017-05-24T02:10:34+00:00</lastmod>
-</url>
-<url>
-  <loc>http://milohartsoe.me/portfolio/tic-tac-toe/index.html</loc>
-  <lastmod>2017-05-24T02:10:34+00:00</lastmod>
-</url>
-<url>
-  <loc>http://milohartsoe.me/portfolio/pomodoro-clock/index.html</loc>
-  <lastmod>2017-05-24T02:10:34+00:00</lastmod>
-</url>
-<url>
-  <loc>http://milohartsoe.me/portfolio/random-quote-generator/index.html</loc>
-  <lastmod>2017-05-24T02:10:34+00:00</lastmod>
-</url>
-<url>
-  <loc>http://milohartsoe.me/portfolio/wikipedia-viewer/index.html</loc>
-  <lastmod>2017-05-24T02:10:34+00:00</lastmod>
-</url>
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://milohartsoe.me/</loc>
+    <lastmod>2018-05-03</lastmod>
+  </url>
+  <url>
+    <loc>https://milohartsoe.me/portfolio/wikipedia-viewer/index.html</loc>
+    <lastmod>2018-05-03</lastmod>
+  </url>
+  <url>
+    <loc>https://milohartsoe.me/portfolio/random-quote-generator/index.html</loc>
+    <lastmod>2018-05-03</lastmod>
+  </url>
+  <url>
+    <loc>https://milohartsoe.me/portfolio/pomodoro-clock/index.html</loc>
+    <lastmod>2018-05-03</lastmod>
+  </url>
+  <url>
+    <loc>https://milohartsoe.me/portfolio/tic-tac-toe/index.html</loc>
+    <lastmod>2018-05-03</lastmod>
+  </url>
 </urlset>
+<!--<guid value="d8237ca9-0b16-4109-babb-8d9b9492eb46" />-->
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
