@@ -39,12 +39,11 @@ function newQuote() {
         getQuote = true;
         $.ajax({
             headers: {
-                "X-Mashape-Key": "tEthxoH7UpmshJEIan8MucKd4spCp1PYPjujsn5GcQvoK0eryB",
                 Accept: "application/json",
-                "Content-Type": "application/x-www-form-urlencoded"
             },
-            url: 'https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous&count=1',
+            url: 'https://random-quote-generator.glitch.me/',
             success: function(res) {
+                res = res[0];
                 $(".text").slideUp(400, function() {
                     $('#quote').text(" " + res.quote);
                     $('#author').text("-" + res.author);
