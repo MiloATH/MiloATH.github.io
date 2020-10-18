@@ -1,27 +1,6 @@
 var getQuote = false;
 
-//For view on iframe
-function iframe() {
-    $(".text").slideUp(400, function() {
-        $('#quote').text(" There's no place like home.");
-        $('#author').text(" -The Wizard of Oz");
-        $("#quote").addClass("fa-quote-left");
-    }).slideDown(400);
-    $(".loading").attr("style", "visibility:hidden;");
-    tweetLink = "https://twitter.com/intent/tweet?text=" + encodeURI("There's no place like home. -The Wizard of Oz");
-}
-
-$(document).ready(function() {
-    try {
-        if (window.self !== window.top) {
-            iframe();
-        } else {
-            newQuote();
-        }
-    } catch (e) {
-        iframe();
-    }
-});
+$(document).ready(newQuote);
 var tweetLink = "https://twitter.com/intent/tweet?text=";
 
 function tweet() {
