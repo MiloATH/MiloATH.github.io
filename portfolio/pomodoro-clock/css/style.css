@@ -36,6 +36,7 @@ button {
 	font-size: 32px;
 	border-radius: 5px;
 	padding-bottom: 9px;
+  line-height: 48px;
 }
 
 .input {

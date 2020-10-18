@@ -1,5 +1,6 @@
 var work = true;
 var started = false; //false if stopped. true if going.
+var fadeTime = 100;
 var workT = 1500000; //25 minutes
 var breakT = 300000; //5 minutes
 var oneMin = 60000; //convert milliseconds to minutes. One minute in milliseconds
@@ -18,7 +19,7 @@ $(".plusWork").on('click', function() {
 $(".minusWork").on('click', function() {
 	if (!started) {
 		workT -= oneMin;
-		workT = workT > 0 ? workT : 0; +
+		workT = workT > oneMin ?  workT : oneMin;
 		$(".work").text(workT / oneMin);
 		updateClock();
 	}
@@ -35,7 +36,7 @@ $(".plusBreak").on('click', function() {
 $(".minusBreak").on('click', function() {
 	if (!started) {
 		breakT -= oneMin;
-		breakT = breakT > 0 ? breakT : 0;
+		breakT = breakT > oneMin ? breakT : oneMin;
 		$(".break").text(breakT / oneMin);
 		updateClock();
 	}
@@ -111,12 +112,12 @@ function animation() {
 		classes += ' clockBreak';
 	}
 	$('.clock').addClass(classes);
-	$('.input').slideUp();
+	$('.input').fadeOut(fadeTime);
 }
 
 function animationStop() {
 	$('.clock').removeClass('clockAnim clockWork clockBreak');
-	$('.input').slideDown();
+	$('.input').fadeIn(fadeTime);
 }
 
 function updateClock() {
