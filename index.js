@@ -1,32 +1,40 @@
-//Anti spam
-$(document).ready(function(){
-	var gmail = ["m","o","c",".","l","i","a","m","g"];
-	gmail.reverse();
-	var arr = ["e","o","s","t","r","a","h","o","l","i","m"];
-	arr.reverse();
-	var atSymbol = String.fromCharCode(64);
-	var m = "mail" + "to:" + arr.join("") + atSymbol + gmail.join("");
-	console.log(m);
-	$('#antispam').attr("href",m);
-});
+document.addEventListener('DOMContentLoaded', () => {
+	// Anti-spam email obfuscation
+	const domain = ['m', 'o', 'c', '.', 'l', 'i', 'a', 'm', 'g'].reverse().join('');
+	const user = ['e', 'o', 's', 't', 'r', 'a', 'h', 'o', 'l', 'i', 'm'].reverse().join('');
+	const mailto = `mailto:${user}@${domain}`;
 
-$('a[href*="#"]:not([href="#"])').click(function() {
-	if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-		var target = $(this.hash);
-		target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-		if (target.length) {
-			$('html, body').animate({
-				scrollTop: target.offset().top
-			}, 1000);
-			return false;
+	['antispam', 'antispam-hero'].forEach((id) => {
+		const el = document.getElementById(id);
+		if (el) {
+			el.setAttribute('href', mailto);
 		}
-	}
-});
+	});
 
-//iframe loader
-$('.voting-app').ready(function() {
-   $('.loader').css('display', 'none');
-});
-$('.voting-app').load(function() {
-   $('.loader').css('display', 'none');
+	// Dynamic copyright year
+	const yearEl = document.getElementById('year');
+	if (yearEl) {
+		yearEl.textContent = new Date().getFullYear();
+	}
+
+	// Theme toggle (Light / Dark mode)
+	const toggleBtn = document.getElementById('theme-toggle');
+	const root = document.documentElement;
+
+	if (toggleBtn) {
+		toggleBtn.addEventListener('click', () => {
+			const currentTheme = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+			const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+			root.setAttribute('data-theme', nextTheme);
+			localStorage.setItem('theme', nextTheme);
+		});
+	}
+
+	// Respect OS theme changes if user hasn't explicitly set a preference
+	const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+	mediaQuery.addEventListener('change', (e) => {
+		if (!localStorage.getItem('theme')) {
+			root.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+		}
+	});
 });
